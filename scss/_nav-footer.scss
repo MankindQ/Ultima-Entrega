@@ -1,0 +1,22 @@
+nav{
+    background-color: $color_principal;
+    
+    grid-area: header;
+    animation-name: cascade;
+    animation-duration: 0.8s;
+    animation-timing-function: ease;
+    .imagenNav{
+        @include general2 (50px, 50px);
+    }
+    ul{
+        list-style-type: none;
+    }
+}
+footer{
+    background-color: $color_principal;
+    .divRS{
+       margin-left: 20px;   
+       display: flex;
+       flex-direction: column;
+    }   
+}

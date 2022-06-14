@@ -1,0 +1,112 @@
+/*Keyframes y Media*/
+@keyframes cascade{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width:425px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: small;
+    }
+    nav{
+        font-size: x-small !important;
+    }
+
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
+        @include general2 (120px,230px);
+    }
+    .mainIndex{
+        font-size: medium !important;
+    }
+    .mainContacto{
+        height: 1000px;
+    }
+    .mainContacto div{
+        font-size: small;
+    }
+}
+@media screen and (max-width:468px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: medium;
+    }
+    nav{
+        font-size: small;
+    }
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
+        @include general2 (180px, 270px);
+    }
+    .google{
+        @include general2 (300px !important, 300px !important);
+    }
+    .mainCM{
+        height: 800px;
+    }
+    .dr1, .dr2, .dr3, .dr4, .dr5, .dr6{
+        margin: 5% 0px 0px 0px;
+        font-size:small ;
+    }
+}
+@media screen and (max-width:768px){
+    
+
+    .mainMedia{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .mainNosotros{
+        height: 1200px;
+    }
+    .divNosotros{
+        grid-template-areas:
+        "N1"
+        "N2"
+        "N3"
+        ;
+    }
+    .N1, .N2, .N3{
+        margin-top: 3%;
+    }
+    .google{
+        @include general2 (450px,450px);
+    }
+    
+    .dr1, .dr2, .dr3, .dr4, .dr5, .dr6{
+        margin: 5% 0px 0px 0px;
+        font-size:medium ;
+    }
+
+}

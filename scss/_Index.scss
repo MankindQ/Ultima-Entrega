@@ -1,0 +1,54 @@
+/*Edicion del index*/
+.mainIndex{
+    @include general (950px,auto,30px);
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    grid-area: main;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    .gridIndex{
+        margin-top: 6%;
+        display:grid;
+        grid-template-areas:
+        "I1 I2 I3"
+        ;
+        .I1{
+            grid-area: I1;
+        }
+        .I2{
+            grid-area: I2;
+        }
+        .I3{
+            grid-area: I3;
+        }
+        .IMG1, .IMG2, .IMG3{
+            margin-top: 3%;
+            width: 300px;
+            height: 300px;
+        }
+        .zoomIndex:hover{
+            transform:scale(1.2);
+        }
+    }
+    .presupuestoIndex{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    h1{
+        margin-top: 30px;
+        font-size: 60px;
+    }
+    h2{
+        margin-top: 30px;
+    }
+
+}

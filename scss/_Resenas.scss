@@ -1,0 +1,66 @@
+/*Edicion resenas*/
+.mainResenas{
+    @include general (1100px,auto,30px);
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    grid-area: main;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    .mainResenas h1{
+        margin-left: 5%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+    .wrapperResenas{
+        justify-content: center;
+        align-content: center;
+        display: grid;
+        grid-template-areas:
+            "dr1"
+            "dr2"
+            "dr3"
+            "dr4"
+            "dr5"
+            "dr6"
+            ;
+            .divResenas{
+                color: black;
+                font-size: medium;
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                border: solid rgb(255, 255, 255) 2px;
+                border-radius:  20px;
+            }
+            .dr1{
+                grid-area: dr1;
+            }
+            .dr2{
+                grid-area: dr2;
+            }
+            .dr3{
+                grid-area: dr3;
+            }
+            .dr4{
+                grid-area: dr4;
+            }
+            .dr5{
+                grid-area: dr5;
+            }
+            .dr6{
+                grid-area: dr6;
+            }
+            .dr1, .dr2, .dr3, .dr4, .dr5, .dr6{
+                margin-top: 6%;
+                font-size: large;
+                @include general2 (100px,800px);
+            }
+    }
+}

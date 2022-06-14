@@ -1,0 +1,35 @@
+/*Edicion contacto*/
+.mainContacto{
+    @include general (800px,auto,30px);
+    background-color: $color-fondo;
+    color: $color-texto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    grid-area: main;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    .formContacto{
+        list-style-type: none;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width:auto;
+    
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+    
+    }
+    .mainContacto h3{
+        font-weight: 900;
+        color: rgb(186, 8, 8);
+    }
+    .separacionContacto{
+        margin-top: 30px;
+    }
+}
